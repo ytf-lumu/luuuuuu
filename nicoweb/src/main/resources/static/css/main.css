@@ -1,0 +1,52 @@
+html,body{
+    width: 2537px;
+    height: 733px;
+    float: left;
+}
+.nico{
+    width: 2537px;
+    height: 733px;
+    float: left;
+}
+.nico-left{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background-color: #393D49;
+}
+.nico-top{
+    width: 90%;
+    height: 10%;
+    float: left;
+    background-color: #393D49;
+}
+.nico-tab{
+    width: 90%;
+    height: 90%;
+    float: left;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.layui-tab{
+    width: 100%;
+    height: 95%;
+    float: left;
+}
+.layui-tab-content{
+    width: 99%;
+    height: 90%;
+    float: left;
+}
+.layui-tab-item{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.layui-tab-title{
+    width: 100%;
+    height: 10%;
+    float: left;
+}
