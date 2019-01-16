@@ -2,6 +2,8 @@ package com.nico.nicoserver.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class YqMenu {
@@ -21,7 +23,6 @@ public class YqMenu {
   private String updateBy;
   private java.sql.Timestamp updateTime;
   private String remark;
-
 
   public long getMenuId() {
     return menuId;
