@@ -17,30 +17,12 @@
 </head>
 <body>
   <div id="app" class="nico">
+      <!--导航栏-->
    <div class="nico-left">
-       <ul class="layui-nav layui-nav-tree  " lay-filter="demo" lay-shrink="all">
-           <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side">  lay-shrink="all"-->
-           <li class="layui-nav-item layui-nav-itemed">
-               <a href="javascript:;">用户权限</a>
-               <dl class="layui-nav-child">
-                   <dd><a href="javascript:;" data-id="user">用户管理</a></dd>
-                   <dd><a href="javascript:;" data-id="role">权限分配</a></dd>
-                   <dd><a href="">跳转</a></dd>
-               </dl>
-           </li>
-           <li class="layui-nav-item">
-               <a href="javascript:;">解决方案</a>
-               <dl class="layui-nav-child">
-                   <dd><a href="javascript:;">移动模块</a></dd>
-                   <dd><a href="javascript:;">后台模版</a></dd>
-                   <dd><a href="javascript:;">电商平台</a></dd>
-               </dl>
-           </li>
-           <li class="layui-nav-item"><a href="javascript:;">产品</a></li>
-           <li class="layui-nav-item"><a href="javascript:;">大数据</a></li>
-       </ul>
+
    </div>
    <div class="nico-top">
+       <div class="nico-top-self">
        <ul class="layui-nav">
            <li class="layui-nav-item">
                <a href="">控制台<span class="layui-badge">9</span></a>
@@ -51,32 +33,30 @@
            <li class="layui-nav-item">
                <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
                <dl class="layui-nav-child">
-                   <dd><a href="javascript:;">修改信息</a></dd>
-                   <dd><a href="javascript:;">安全管理</a></dd>
+                   <dd><a href="javascript:;" >修改信息</a></dd>
+                   <dd><a href="javascript:;" >安全管理</a></dd>
                    <dd><a href="javascript:;">退了</a></dd>
                </dl>
            </li>
        </ul>
+       </div>
    </div>
+   <!--选项卡   -->
    <div class="nico-tab">
        <div class="layui-tab" lay-allowClose="true" lay-filter="nicotab">
            <ul class="layui-tab-title">
-               <li class="layui-this first-tab">网站设置</li>
-               <li>用户管理</li>
-               <li>权限分配</li>
-               <li>全部历史商品管理文字长一点试试</li>
-               <li>订单管理</li>
+               <li class="first-tab layui-this">首页</li>
            </ul>
            <div class="layui-tab-content">
                <div class="layui-tab-item layui-show">
                    <iframe src="/xsll/www" ></iframe>
                </div>
-               <div class="layui-tab-item" lay-id="user">
+              <!-- <div class="layui-tab-item" >
                    <iframe src="/dept/body" ></iframe>
                </div>
-               <div class="layui-tab-item" lay-id="role">3</div>
-               <div class="layui-tab-item">4</div>
-               <div class="layui-tab-item" lay-id="1547021485073">6ge6</div>
+               <div class="layui-tab-item" >
+                   <iframe src="/menu/index" ></iframe>
+               </div>-->
            </div>
        </div>
    </div>
