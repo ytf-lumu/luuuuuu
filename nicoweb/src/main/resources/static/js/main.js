@@ -1,7 +1,8 @@
 var element;
-layui.use('element', function(){
+layui.use(['element','layer'], function(){
     var $ = layui.jquery;
     element= layui.element;
+    var layer= layui.layer;
 });
 
 var vm = new Vue({
@@ -51,7 +52,7 @@ var vm = new Vue({
         }
     }
     layuiitem += "</ul>";
-    $(".nico-left").append(layuiitem);
+    $(".nico-nav").append(layuiitem);
     //重新渲染
     element.render('nav','nico-menu');
 }
@@ -81,10 +82,15 @@ var vm = new Vue({
     var tabid = $(event).attr("data-id");
     var taburl = $(event).attr("data-url");
     var size = $(".layui-tab-title li[lay-id='"+tabid+"']").length;
-    console.log(tabname + " id== " + tabid +" size== " + size);
+     var ksize = $(".layui-tab-title li").length;
+    console.log(tabname + " id== " + tabid +" size== " + size +"选项卡数："+ksize);
+
     //新增一个Tab选项
     if ( size == 0 ) {
-        console.log("添加tab--"+tabname);
+        if(ksize > 5){
+            layer.msg("选项卡数超过限制5");
+            return
+        }
         element.tabAdd('nicotab', {
             // title: '新选项<i class="layui-icon layui-unselect layui-tab-close">&#x1006;</i>' //用于演示
             title: tabname
@@ -93,7 +99,6 @@ var vm = new Vue({
         });
         element.tabChange('nicotab', tabid); //切换到：用户管理
     }else {
-        console.log("切换到--"+tabname);
         //切换到指定Tab项
         element.tabChange('nicotab', tabid); //切换到：用户管理
     }

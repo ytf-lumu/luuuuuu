@@ -56,10 +56,8 @@
                     //处理服务器异常信息提示
                     url: url,
                     success: function (response) {
-                        console.info(response);
                         vm.$data.yh = response;
                         vm.$data.title = "vscode";
-                        console.info(vm.$data.title);
                     }
                 });
             }

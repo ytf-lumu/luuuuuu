@@ -35,7 +35,7 @@ public class DeptServer {
     public Map deptContext(){
        List<YqDept> list = restTemplate.getForEntity("http://localhost:8900/dept/query", List.class).getBody();
         Long count = restTemplate.getForEntity("http://localhost:8900/dept/count", Long.class).getBody();
-        System.out.println("dept-count------>"+count);
+       // System.out.println("dept-count------>"+count);
         Map map = new HashMap();
         map.put("dept", list);
         map.put("count", count);

@@ -38,7 +38,7 @@ public class nicotest {
     public List<YqUser> toIndex(Model model){
         List<YqUser> msg=restTemplate.getForEntity("http://localhost:8900/user/query",List.class).getBody();
         model.addAttribute("msg",msg);
-        System.out.println("------->"+msg.toString());
+        //System.out.println("------->"+msg.toString());
         return msg;
     }
 }
