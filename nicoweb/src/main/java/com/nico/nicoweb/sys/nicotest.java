@@ -41,4 +41,9 @@ public class nicotest {
         //System.out.println("------->"+msg.toString());
         return msg;
     }
+
+    @RequestMapping(value = "/wdserver", method = RequestMethod.GET)
+    public String uiindex(){
+        return "swagger-ui.html";
+    }
 }
