@@ -11,6 +11,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Date 2019/2/16 0016 14:23
  */
 @Controller
-public class ToolServer {
-
-}
+@RequestMapping("uitest")
+public class ToolServer { }
